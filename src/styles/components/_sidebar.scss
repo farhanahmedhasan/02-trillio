@@ -1,0 +1,70 @@
+.sidebar {
+  flex: 0 0 18%;
+  background-color: var(--color-text-dark-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+
+  &__links {
+    list-style: none;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2%;
+      background-color: var(--color-primary-light);
+      transform: scaleY(0);
+      transition: transform 0.2s, width 0.4s 0.2s ease-in-out, background-color 0.1s;
+    }
+
+    &:hover::before,
+    &--active::before {
+      transform: scaleY(1);
+      width: 100%;
+    }
+
+    &:active::before {
+      background-color: var(--color-primary);
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text-light-1);
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+
+    position: relative;
+    z-index: 10;
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}
+
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-text-light-4);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2rem;
+}

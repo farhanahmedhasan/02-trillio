@@ -1,0 +1,60 @@
+.userNav {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+
+  &__iconBox {
+    position: relative;
+  }
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-text-light-4);
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    color: var(--color-text-dark-2);
+  }
+
+  &__notification {
+    font-size: 0.8rem;
+    align-self: flex-start;
+    background-color: var(--color-primary-light);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 1.85rem;
+    height: 1.85rem;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user {
+  }
+
+  &__userPhoto {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__userName {
+    margin-left: 5px;
+  }
+}
