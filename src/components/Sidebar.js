@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { sidebarData } from '../data';
-import { Link, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
-  console.log(useParams());
+  const [location, setLocation] = useState('');
+
+  const readPathname = (match, location) => {
+    if (match) {
+      setLocation(location.pathname);
+    }
+  };
 
   return (
     <nav className='sidebar'>
@@ -11,11 +17,14 @@ const Sidebar = () => {
         {sidebarData.map((item) => {
           const { id, icon, text, link } = item;
           return (
-            <li key={id} className='sidebar__item sidebar__item--active'>
-              <Link to={link} className='sidebar__link'>
+            <li
+              key={id}
+              className={location === link ? 'sidebar__item sidebar__item--active' : 'sidebar__item'}
+            >
+              <NavLink to={link} className='sidebar__link' isActive={readPathname}>
                 {icon}
                 <span>{text}</span>
-              </Link>
+              </NavLink>
             </li>
           );
         })}
