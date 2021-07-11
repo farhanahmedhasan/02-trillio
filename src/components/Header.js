@@ -2,14 +2,17 @@ import React from 'react';
 import logo from '../assets/img/logo.png';
 import user from '../assets/img/user.jpg';
 
+import { Link } from 'react-router-dom';
+
 import { BsSearch, BsFillBookmarksFill } from 'react-icons/bs';
 import { IoChatboxSharp } from 'react-icons/io5';
 
 const Header = () => {
   return (
     <header className='header'>
-      <img src={logo} alt='trillio logo' className='logo' height='50px' />
-
+      <Link to='/'>
+        <img src={logo} alt='trillio logo' className='logo' height='50px' />
+      </Link>
       <form action='#' className='search'>
         <input type='search' className='search__input' placeholder='Search hotels' />
 
@@ -17,7 +20,6 @@ const Header = () => {
           <BsSearch className='search__icon' />
         </button>
       </form>
-
       <nav className='userNav'>
         <div className='userNav__iconBox'>
           <BsFillBookmarksFill className='userNav__icon' />
