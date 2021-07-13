@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--inline {
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    margin-left: 1rem;
+
+    &:hover {
+      color: var(--color-text-dark-1);
+    }
+  }
+
+  &--animatedPulsate:hover {
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.2);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

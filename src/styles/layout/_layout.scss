@@ -8,7 +8,7 @@
 .header {
   height: 7rem;
   background-color: var(--color-white);
-  border-bottom: var(--color-text-light-2);
+  border-bottom: 1px solid var(--color-text-light-2);
 
   display: flex;
   align-items: center;
@@ -23,14 +23,4 @@
 
 .content {
   display: flex;
-}
-
-.hotelView {
-  background-color: var(--color-white);
-
-  //testing
-  height: 150rem;
-  // overflow-y: scroll;
-  background-color: orangered;
-  flex: 1;
 }
