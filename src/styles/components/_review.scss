@@ -1,0 +1,88 @@
+.userReview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 0;
+  font-size: 1.4rem;
+}
+
+.review {
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  &__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+  }
+
+  &__userBox {
+    margin: 0 auto 0 2rem;
+  }
+
+  &__userName {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__userDate {
+    font-size: 1.2rem;
+    color: var(--color-text-dark-3);
+  }
+
+  &__rating {
+    font-size: 1.7rem;
+    color: var(--color-primary-light);
+  }
+
+  &::before {
+    content: '\201C';
+    position: absolute;
+    line-height: 1;
+    top: -9%;
+    left: 0;
+    font-size: 15rem;
+    font-family: sans-serif;
+    color: var(--color-text-light-4);
+    z-index: 8;
+  }
+
+  &__btnBox {
+    &--nextReview,
+    &--PrevReview {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      color: var(--color-text-light-4);
+      font-size: 2.5rem;
+      cursor: pointer;
+      z-index: 100;
+    }
+    &--PrevReview {
+      left: -3.5rem;
+    }
+    &--nextReview {
+      right: -3.5rem;
+    }
+  }
+}
+
+.arrow {
+  margin-bottom: -0.2rem;
+}

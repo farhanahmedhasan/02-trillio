@@ -64,3 +64,8 @@ body::-webkit-scrollbar-thumb {
 
   outline: 1px solid #fff;
 }
+
+::selection {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}

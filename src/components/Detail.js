@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineRight } from 'react-icons/ai';
+import Review from './Review';
 
 import '../styles/components/_details.scss';
 
@@ -69,7 +70,7 @@ const Detail = () => {
         </div>
       </div>
 
-      <div className='userReview'>User Review</div>
+      <Review />
     </div>
   );
 };
