@@ -8,7 +8,7 @@
 .header {
   height: 7rem;
   background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-text-light-2);
+  border-bottom: var(--border-bottom);
 
   display: flex;
   align-items: center;

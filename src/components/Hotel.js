@@ -8,6 +8,8 @@ import { FiMapPin } from 'react-icons/fi';
 
 import '../styles/components/_hotel.scss';
 
+import Detail from './Detail';
+
 const Hotel = () => {
   return (
     <main className='hotelView'>
@@ -46,6 +48,8 @@ const Hotel = () => {
           <div className='overview__ratingCount'>412 votes</div>
         </div>
       </div>
+
+      <Detail />
     </main>
   );
 };

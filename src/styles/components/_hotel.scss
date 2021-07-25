@@ -1,9 +1,5 @@
 .hotelView {
   background-color: var(--color-white);
-
-  //testing
-  height: 150rem;
-  // overflow-y: scroll;
   flex: 1;
 }
 
@@ -19,7 +15,7 @@
 }
 
 .overview {
-  border-bottom: 1px solid var(--color-text-light-2);
+  border-bottom: var(--border-bottom);
   display: flex;
   align-items: center;
 
