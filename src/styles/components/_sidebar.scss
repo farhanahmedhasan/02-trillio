@@ -56,6 +56,11 @@
 
     position: relative;
     z-index: 10;
+    transition: all 0.4s ease-in;
+  }
+
+  &__link--active {
+    background-color: var(--color-primary-light);
   }
 
   span {
