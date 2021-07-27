@@ -9,6 +9,7 @@ import { FiMapPin } from 'react-icons/fi';
 import '../styles/components/_hotel.scss';
 
 import Detail from './Detail';
+import Cta from './Cta';
 
 const Hotel = () => {
   return (
@@ -50,6 +51,7 @@ const Hotel = () => {
       </div>
 
       <Detail />
+      <Cta />
     </main>
   );
 };

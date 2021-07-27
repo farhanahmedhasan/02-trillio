@@ -1,0 +1,12 @@
+.cta {
+  padding: 3.5rem;
+  text-align: center;
+
+  &__title {
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+  }
+}
