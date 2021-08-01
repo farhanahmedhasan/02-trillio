@@ -52,6 +52,11 @@
     width: 5rem;
     object-fit: cover;
     border-radius: 50%;
+
+    @media only screen and (max-width: $bp-fivehun) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 
   &__userName {

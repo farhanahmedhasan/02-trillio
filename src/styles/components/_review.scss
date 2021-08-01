@@ -13,6 +13,11 @@
   margin-bottom: 2rem;
   position: relative;
 
+  @media only screen and (max-width: 37.5em) {
+    margin: 4rem 0;
+    width: 80%;
+  }
+
   &__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -76,9 +81,15 @@
     }
     &--PrevReview {
       left: -3.5rem;
+      @media only screen and (max-width: 56.25em) {
+        left: 0rem;
+      }
     }
     &--nextReview {
       right: -3.5rem;
+      @media only screen and (max-width: 56.25em) {
+        right: 0rem;
+      }
     }
   }
 }

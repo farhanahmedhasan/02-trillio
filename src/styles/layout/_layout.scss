@@ -1,5 +1,5 @@
 .container {
-  max-width: 140rem;
+  max-width: 200rem;
   background-color: var(--color-text-light-1);
   margin: 0 auto;
   box-shadow: var(--shadow-dark);
@@ -16,11 +16,35 @@
   position: sticky;
   top: 0;
   z-index: 100000000;
+
+  @media only screen and (max-width: $bp-fivehun) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+
   .logo {
     margin-left: 2rem;
+
+    @media only screen and (max-width: $bp-sixhun) {
+      height: 35px;
+    }
+
+    @media only screen and (max-width: $bp-fivehun) {
+      height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: $bp-ninehun) {
+    position: static;
+    top: 0;
   }
 }
 
 .content {
   display: flex;
+
+  @media only screen and (max-width: $bp-ninehun) {
+    flex-direction: column;
+  }
 }

@@ -22,6 +22,13 @@
   --border-bottom: 1px solid var(--color-text-light-2);
 }
 
+$bp-evelenhundred: 68.75em; //1100px
+$bp-ninehun: 56.25em; //900px
+$bp-sevenhun: 43.75em; //700px
+$bp-sixhun: 37.5em; //600px
+$bp-fivehun: 31.25em; //500px
+$bp-fourhun: 25em; //400px
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +43,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-evelenhundred) {
+    font-size: 56.25%; //1rem = 9px
+  }
+  @media only screen and (max-width: $bp-sevenhun) {
+    font-size: 50%; //1rem = 8px
+  }
 }
 
 body {

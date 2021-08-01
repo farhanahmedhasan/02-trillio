@@ -4,6 +4,12 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-fivehun) {
+    order: 1;
+    flex: 0 0 80%;
+    margin: 0 auto;
+  }
+
   &__input {
     width: 90%;
     padding: 1rem 2rem;
